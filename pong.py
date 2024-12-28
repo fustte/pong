@@ -27,8 +27,9 @@ while not salir:
     pygame.draw.rect(pantalla, (0,0,0), ((0,0), (800, 600)))
 
     # 2. pitar los objetos en su nueva posicion
-    rectangulo = pygame.Rect(cont / 10, cont /5, 300, 150)  # Aqui elijo la posicion de la pantalla pixeles
-    pygame.draw.rect(pantalla, (94, 68, 158), rectangulo)   # aqui los colores
+    
+    rectangulo = pygame.Rect(50, 50, 300, 150)  # Aqui elijo la posicion de la pantalla pixeles
+    pygame.draw.rect(pantalla, (cont % 94, 68, 158), rectangulo)   # aqui los colores
 
     # mostrar los cambios en la pantalla
     pygame.display.flip()
